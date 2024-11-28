@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family:Arial, Helvetica, sans-serif
+}
+body{
+    /* background-color: #8d8d8d;  */
+    /* background:red, url(deucetatum.jpg); */
+    /* background-image:linear-gradient(rgba(0, 0, 0, 0.826), rgba(0, 0, 0, 0.804)), url(pippenjordan.jpg) ; */
+    background-size: 100%;
+    background-color: #8d8d8d;
+    font-size: 16px;    
+    margin-top: 100px; /* Sesuaikan dengan tinggi header */
+}
+header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 20px 5%;
+    /* margin: 0 auto; */
+    background-color: #000000;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    font-size: 19px;
+    z-index: 10;
+}
+.bighome img {
+    width: 55%;
+    filter: grayscale();
+    margin: auto;
+    margin-top: 15px; /* Mengurangi margin atas pada gambar */
+    margin-bottom: 0; /* Menghilangkan jarak bawah pada gambar */
+}
+
+.bighome {
+    width: 90%;
+    margin: 7em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+    gap: 1em;
+    text-align: center;
+}
+
+.bighome div {
+    flex:1; 
+    display: flex;
+    /* grid-template-columns: repeat(2, 2fr); */
+    flex-direction:column; 
+}
+.bighomenew img {
+    width: 55%;
+    margin-top: 15px; /* Jarak atas gambar */
+    margin-bottom: 15px; /* Menghilangkan jarak bawah pada gambar */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: grayscale(100%); /* Mengubah gambar menjadi hitam putih */
+}
+
+.bighomenew {
+    width: 90%;
+    margin: 7em auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 1em;
+    text-align:center;
+    text-align: right;
+}
+.bighomenewfirst{
+    text-align: center;
+}
+.bighomenew div {
+    flex:1; 
+    display: flex;
+    /* grid-template-columns: repeat(2, 2fr); */
+    flex-direction:column; 
+}
+.spesial{
+    font-size: 20px;
+}
+.closer{
+    width: 1px;
+    /* height: auto; */
+}
+@media screen and (max-width : 768px) {
+    body{
+        font-size:0.4em;
+        padding-top: 0px;
+    }
+    .spesial{
+        font-size: 12px;
+    }
+}
